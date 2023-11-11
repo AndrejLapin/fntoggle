@@ -13,13 +13,13 @@ int main(int argc, const char * argv[]) {
         
         if (result && validValue) res = disable();
         else if (!result && validValue) res = enable();
-        else return -1;
+        else return 1;
     }
     else {
-        return -1;
+        return 1;
     }
     
     printf("res: %d\n", res);
-    return res;
+    return 0;
 }
 
